@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "SF Display";
+    font-weight: 500;
+    src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+  }
+* {
+    font-family: "SF Display";
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+nav {
+    height: 40px;
+    background-color: rgba(223, 223, 223, 0.88);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    border:none;
+}
+nav > ul {
+    margin: 0px;
+    list-style-type: none;
+}
+#aboutMe , #contactMe {
+    display: inline;
+    font-size: 20px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+#aboutMe {
+    float: left;
+    
+}
+#aboutMe > li > a {
+    background-color: rgba(223, 223, 223, 0.418);
+}
+#contactMe {
+    float: right;
+    margin-right: 50px;
+}
+header {
+    background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+#headerContainer {
+    display: flex;
+    flex-direction: row; 
+    padding-top: 20px;
+    justify-content: space-around;
+    width:80%;
+    height: 400px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+}
+#headerText  {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    bottom: 30px;
+    flex-direction: column;
+}
+#headerText > h2 {
+    margin-top: 0px;
+    font-size: 35px;
+}
+#headerText > h1 {
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+#headerContainer > img {
+    height: 500px;
+    float: right;
+}
+#icons {
+    display: flex;                 
+    flex-direction: row;            
+    flex-wrap: nowrap;             
+    justify-content: space-between;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.smallIcon {
+    height:30px;
+}
+#quizApp {
+    background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+    height: max-content;
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+#projectText, #projectImg {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#projectText > a {
+    padding-right: 30px;
+    
+}
+#projectImg {  
+    float: right;
+}
+#projectImg > img {
+    width: 50%;
+    min-height: 170px;
+    min-width: 220px;
+    float: right;   
+    border-radius: 0px 10px 10px 0px;
+}
+#projectText > h3 {
+    font-size: 20px;
+}
+#projectText > p {  
+    width:90%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#aboutMeText , #contactMeText {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,white,rgb(233, 233, 233),rgb(223, 223, 223));
+}
+#contactMeText > p, #aboutMeText > p {
+    width: 60%; 
+}
+#contactMeText > p{
+    line-height: 20px;
+}
+html {
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+    #headerContainer > img {
+        height: 220px;  
+    }
+    #headerText > h2 {
+        font-size: 22px;
+    }
+    #headerText > h1 {
+        font-size: 32px;
+    }
+    #github > a > img, #email > a > img, #linkedin > a > img {
+        max-height:25px;
+    }
+    #quizApp {
+        flex-direction: column;
+    }
+    #projectImg {
+        text-align: center;
+        padding-top: 10px;
+    }
+    #projectImg > img {
+        border-radius: 0px 0px 10px 10px;
+        width:100%;
+        float: none; 
+    }
+    #contactMeText > p, #aboutMeText > p {
+        width: 80%; 
+        font-size: 18px;
+    }
+}
+.iconExpand {
+    overflow:hidden;
+    transition:max-height 0.3s ease-out;
+    height:auto;
+    max-height:40px;
+}
